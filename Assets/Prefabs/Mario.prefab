@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 165439322241767790}
   - component: {fileID: 7327249703321916280}
+  - component: {fileID: 5860937405783012041}
   - component: {fileID: 7177535007842784203}
   - component: {fileID: 2238906532373988773}
   m_Layer: 3
@@ -86,6 +87,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5860937405783012041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4717741940900030011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da784d6f1e9e2034c91a18dde957c7da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  small: {fileID: 7177535007842784203}
+  big: {fileID: 587571321585539956}
 --- !u!114 &7177535007842784203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,7 +147,9 @@ GameObject:
   - component: {fileID: 7195732517812342969}
   - component: {fileID: 2540660517786823097}
   - component: {fileID: 3013836937176971874}
+  - component: {fileID: 2565006611747194662}
   - component: {fileID: 4470633162374861736}
+  - component: {fileID: 3287382438239954102}
   m_Layer: 3
   m_Name: Mario
   m_TagString: Player
@@ -194,6 +211,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1}
   m_Direction: 0
+--- !u!114 &2565006611747194662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5469843001634810709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da784d6f1e9e2034c91a18dde957c7da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  small: {fileID: 7177535007842784203}
+  big: {fileID: 587571321585539956}
 --- !u!114 &4470633162374861736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,6 +240,20 @@ MonoBehaviour:
   moveSpeed: 8
   maxJumpHeight: 5
   maxJumpTime: 1
+--- !u!114 &3287382438239954102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5469843001634810709}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6179de16eabcea4eb58022252f0bdd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 7327249703321916280}
+  deadSprite: {fileID: 21300000, guid: e9345d9e9a21949478e4292b904591cd, type: 3}
 --- !u!1 &9155861541033312362
 GameObject:
   m_ObjectHideFlags: 0

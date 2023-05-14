@@ -105,11 +105,22 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.layer != LayerMask.NameToLayer("PowerUp"))
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
-            if(transform.DotTest(collision.transform, Vector2.up))
+            if(transform.DotTest(collision.transform, Vector2.down))
             {
-                velocity.y = 0f;
+                velocity.y = jumpForce / 2f;
+                Jumping = true;
+            }
+        }
+        else
+        {
+            if (collision.gameObject.layer != LayerMask.NameToLayer("PowerUp"))
+            {
+                if (transform.DotTest(collision.transform, Vector2.up))
+                {
+                    velocity.y = 0f;
+                }
             }
         }
     }
