@@ -101,6 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   small: {fileID: 7177535007842784203}
   big: {fileID: 587571321585539956}
+  capsuleCollider: {fileID: 0}
 --- !u!114 &7177535007842784203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,6 +226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   small: {fileID: 7177535007842784203}
   big: {fileID: 587571321585539956}
+  capsuleCollider: {fileID: 0}
 --- !u!114 &4470633162374861736
 MonoBehaviour:
   m_ObjectHideFlags: 0
