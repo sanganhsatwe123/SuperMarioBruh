@@ -32,6 +32,22 @@ public class PlayerMovement : MonoBehaviour
         cam = Camera.main;
     }
 
+    private void OnEnable()
+    {
+        GetComponent<Rigidbody>().isKinematic = false;
+        GetComponent<Collider>().enabled = true;
+        velocity = Vector2.zero;
+        Jumping = false;
+    }
+
+    private void OnDisable()
+    {
+        GetComponent<Rigidbody>().isKinematic = true;
+        GetComponent<Collider>().enabled = false;
+        velocity = Vector2.zero;
+        Jumping = false;
+    }
+
     private void Update()
     {
         HorizontalMovement();
